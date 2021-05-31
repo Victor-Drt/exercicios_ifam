@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Exercicio 28</title>
+</head>
+<body>
+    <div id="dados_pessoais" title="Dados pessoais">
+        
+            Codigo: <input type="text" id="campo_cod" value="001" readonly><br>
+
+            Nome: <input type="text" id="campo_nome"
+            name="nome"><br>
+
+            Senha: <input type="password" id="campo_senha" name="senha"><br>
+
+            Sexo: 
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                <input type="radio" name="sexo" value="Masculino">Feminino<br>
+
+            Idade: <input type="text" id="campo_idade" name="idade" maxlength="3"><br>
+
+            Cartao de Credito<br>
+            <select name="cartao">
+                <option value="MasterCard">MasterCard</option>
+                <option value="Visa">Visa</option>
+                <option value="American Express">American Express</option>
+            </select> 
+    </div>
+
+    <div id="dados_profissionais" title="Dados profissionais">
+        Cargo: 
+        <select name="cargo">
+            <option value="Analista Júnior">Analista Júnior</option>
+            <option value="Analista Pleno">Analista Pleno</option>
+            <option value="Analista Sênior">Analista Sênior</option>
+        </select> 
+
+        <br>Dados Pessoais:<br>
+        <input type="checkbox" name="dados_pess" value="Fumante">Fumante<br>
+        <input type="checkbox" name="dados_pess" value="PraticaExerc">Pratica Exercicios Fisicos<br>
+        <input type="checkbox" name="dados_pess" value="Bebe">Consome bebida alcoolica<br>
+
+        Experiencias Profissionais:<br>
+        <textarea id="text_area">Data Inicio/Data Fim/Empresa/Cargo
+        </textarea>
+    </div>
+    <div id="div_botoes">
+        <input type="button" value="Limpar">
+        <input type="button" value="Inserir">
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin: 0.5px;
+}
+
+#graduacao{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 3px;
+    color: blue;
+}
+
+#pos_graduacao{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 3px;
+    color: green;
+}
+
+#mestrado{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 3px;
+    font-style: italic;
+}
+
+#doutorado{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 3px;
+    color: red;
+}
+
+.linha_impar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5;
+    color: magenta;
+    margin-left: 50px;
+}
+
+.linha_par{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5;
+    color: magenta;
+    margin-left: 100px;
+}

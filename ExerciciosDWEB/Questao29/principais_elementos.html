@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Principais elementos</title>
+</head>
+<body>
+    <div>
+        <div id="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="exercicio29.html">Home</a></li>
+                <li><a href="principais_elementos.html" target="_blank">Principais elementos</a></li>
+                <li><a href="principais_atributos.html" target="_blank">Principais atributos</a></li>
+                <li><a href="referencias_bibliograficas.html" target="_blank">Referencias bibliográficas</a></li>
+            </ul>
+        </div>
+
+        <div id="div_conteudo">
+            
+            <p class="titulo_principal">Principais elementos</p><br>
+            <p class="texto">Esta página lista todos os elementos HTML. Eles são agrupados por função para ajuda-lo a achar o que quer fácilmente. Apesar deste guia ser escrito para aqueles mais inexperientes com a programação, nós esperamos que seja útil para todos.</p>
+            <p class="texto">
+                <ul>
+                    <li class="subtitulo">Elementos de texto</li>
+                    <p class="texto">Usam-se elementos HTML de conteúdo textual para se organizar blocos ou seções de conteúdo postos entre as tags de abertura &lt;body&gt; e fechamento &lt;/body&gt;. Importantes para accessibilidade e SEO, esses elementos identificam o propósito ou estrutura do conteúdo.</p>
+                    <dl>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;blockquote&gt;</dt>
+                        <dd class="texto">O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o cite elemento.<br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                &lt;blockquote cite="http://developer.mozilla.org"&gt;<br>
+                                ....&lt;p&gt;Esta é uma citação tirada da
+                                Mozilla Developer Center.&lt;/p&gt;<br>
+                                &lt;/blockquote&gt;
+                            </div><br>
+                            <b>Resultado :</b><br> 
+                            <div class="resultado">
+                                <blockquote cite="http://developer.mozilla.org">
+                                    <p>Esta é uma citação tirada da
+                                    Mozilla Developer Center.</p>
+                                  </blockquote>
+                            </div>
+                        </dd>
+                        
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;dd&gt;</dt>
+                        <dd class="texto">A Tag inicial (dd) é obrigatória.
+                            A Tag final (&lt;/dd&gt;) pode ser omitida se seguida imediatamente por outro elemento dd, ou se o elemento pai não tiver mais conteúdo.
+                            <br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                &lt;dl&gt;<br>
+                                ....&lt;dt&gt;
+                                <br>........Firefox
+                                <br>....&lt;/dt&gt;<br>
+                                ....&lt;dd&gt;<br>
+                                    ........A free, open source, cross-platform, graphical web browser developed by the Mozilla Corporation and hundreds of volunteers.<br>
+                                ....&lt;/dd&gt;<br>
+                                &lt;/dl&gt;
+                            </div><br>
+                            <b>Resultado :</b><br> 
+                            <div class="resultado">
+                                <dl>
+                                    <dt>Firefox</dt>
+                                    <dd>A free, open source, cross-platform, graphical web browser
+                                        developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+                                  
+                                    <!-- other terms and definitions -->
+                                  </dl>
+                            </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;hr&gt;</dt>
+                        <dd class="texto">O elemento HTML &lt;hr&gt; representa uma quebra temática entre elementos de nível de parágrafo (por exemplo , uma mudança da cena de uma história, ou uma mudança de tema com uma seção). Nas versões anteriores do HTML, representava uma linha horizontal. Pode continuar sendo exibida como uma linha horizontal nos navegadores, mas agora está definida em termos semânticos, em vez de termos de apresentação.
+                            <br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                &lt;p&gt;Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.
+                                    Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.&lt;/p&gt;
+                                  
+                                    <br>&lt;hr&gt;
+                                  
+                                  <br>&lt;p&gt;Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.
+                                    Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.&lt;/p&gt;
+                            </div>
+                            <b>Resultado :</b><br>
+                            <div class="resultado">
+                                <p>Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.
+                                    Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.</p>
+                                  
+                                  <hr>
+                                  
+                                  <p>Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.
+                                    Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.</p>
+                            </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;li&gt;</dt>
+                        <dd class="texto">O elemento HTML &lt;li&gt;  (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (ol), uma lista desordenada (ul), ou um menu (menu) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
+                            <br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                ....&lt;ol&gt;<br>
+                                ........&lt;li&gt;primeiro item&lt;/li&gt;<br>
+                                ........&lt;li&gt;segundo item&lt;/li&gt;<br>
+                                ........&lt;li&gt;terceiro item&lt;/li&gt;<br>
+                                ....&lt;/ol&gt;
+                                <br>
+                                <br>
+                                ....&lt;ul&gt;<br>
+                                ........&lt;li&gt;primeiro item&lt;/li&gt;<br>
+                                ........&lt;li&gt;segundo item&lt;/li&gt;<br>
+                                ........&lt;li&gt;terceiro item&lt;/li&gt;<br>
+                                ....&lt;/ul&gt;
+                            </div>
+                            <b>Resultado :</b><br>
+                            <div class="resultado">
+                                <ol>
+                                    <li>primeiro item</li>
+                                    <li>segundo item</li>
+                                    <li>terceiro item</li>
+                                </ol>
+                                <br>
+                                <ul>
+                                    <li>primeiro item</li>
+                                    <li>segundo item</li>
+                                    <li>terceiro item</li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;ol&gt;</dt>
+                        <dd class="texto">O Elemento HTML &lt;ol&gt; (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. De forma característica esses itens ordenados em uma lista são mostrados com uma contagem que os precede, que pode ser de qualquer tipo, como numerais, letras, algarismos romanos, ou simples símbolos. Esse modelo numerado não é definido na descrição html da página, mas na folha de estilos CSS associada, pela propriedade list-style-type.
+                            <br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                ....&lt;ol&gt;<br>
+                                ........&lt;li&gt;primeiro item&lt;/li&gt;<br>
+                                ........&lt;li&gt;segundo item&lt;/li&gt;<br>
+                                ........&lt;li&gt;terceiro item&lt;/li&gt;<br>
+                                ....&lt;/ol&gt;
+                            </div>
+                            <b>Resultado :</b><br>
+                            <div class="resultado">
+                                <ol>
+                                    <li>primeiro item</li>
+                                    <li>segundo item</li>
+                                    <li>terceiro item</li>
+                                </ol>
+                            </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;ul&gt;</dt>
+                        <dd class="texto">O elemento HTML&lt;ul&gt; (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes. Caracteristicamente, os itens em uma lista desordenada são exibidos com um marcador que pode ter várias formas, como um ponto, um círculo, ou um quadrado. O tipo de marcador não é definido na descrição HTML da página, mas na CSS associada, utilizando a propriedade list-style-type.
+                            <br><b>Exemplo:</b>
+                            <div class="cod_exemplo">
+                                ....&lt;ul&gt;<br>
+                                ........&lt;li&gt;primeiro item&lt;/li&gt;<br>
+                                ........&lt;li&gt;segundo item&lt;/li&gt;<br>
+                                ........&lt;li&gt;terceiro item&lt;/li&gt;<br>
+                                ....&lt;/ul&gt;
+                            </div>
+                            <b>Resultado :</b><br>
+                            <div class="resultado">
+                                <ul>
+                                    <li>primeiro item</li>
+                                    <li>segundo item</li>
+                                    <li>terceiro item</li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;p&gt;</dt>
+                        <dd class="texto">	O elemento HTML &lt;p&gt; representa um parágrafo. Em mídias visuais, parágrafos são representados como blocos indentados de texto com a primeira letra avançada e separados por linhas em branco. Já em HTML, parágrafos são usados para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de um formulário.
+                        Parágrafos são Elementos block-level, e fecharão automaticamente caso outro Elemento block-level inicie antes da tag de fechamento &lt;p&gt;. Veja "Omissão de tag" abaixo.
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;p&gt;Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.
+                            Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.&lt;/p&gt;<br>
+                          
+                            &lt;p&gt;Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.
+                             Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.&lt;/p&gt;
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <p>Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.
+                                Este é o primeiro parágrafo do texto. Este é o primeiro parágrafo do texto.</p>
+                              
+                            <p>Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.
+                            Este é o segundo parágrafo do texto. Este é o segundo parágrafo do texto.</p>
+                        </div>
+                        </dd>
+                    </dl>
+                    <li class="subtitulo">Elementos Containers</li>
+                    <p class="texto">
+                        Na linguagem HTML existem dois elementos containers especiais, o &lt;span&gt; e o &lt;div&gt;, muito utilizados na geração de efeitos dinâmicos em páginas HTML (a tecnologia que possibilita esta prática, é chamada de DHTML) onde estes, podem ser utilizados com êxito na aplicação dos estilos de formatação a um grupo de elementos que compartilhem características comuns de formatação.
+                    </p>
+                    <dl>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;div&gt;</dt>
+                        <dd class="texto">O elemento de divisão HTML &lt;div&gt; é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como article ou nav).
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;div&gt;
+                            &lt;p&gt;Qualquer tipo de conteúdo aqui. Como &lt;p&gt;, &lt;table&gt;. Você dá o nome!&lt;/p&gt;
+                            &lt;/div&gt;
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <div>
+                                <p>Qualquer tipo de conteúdo aqui. Como &lt;p&gt;, &lt;table&gt;. Você dá o nome!</p>
+                            </div>
+                        </div>
+                        </dd>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;span&gt;</dt>
+                        <dd class="texto">O elemento HTML &lt;span&gt; é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ), ou para compartilhar valores de atributos como lang. Ele deve ser usado somente quando nenhum outro elemento semântico for apropriado. &lt;span&gt; é muito parecido com o elemento &lt;div&gt; , entretando  &lt;div&gt; é um elemento de nível de bloco enquanto &lt;span&gt; é um elemento em linha.
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;div&gt;
+                            &lt;p&gt;Qualquer tipo de conteúdo aqui. Como &lt;p&gt;, &lt;table&gt;. Você dá o nome!&lt;/p&gt;
+                            &lt;/div&gt;
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <p><span>Some text</span></p>
+                        </div>
+                        </dd>
+                    </dl>
+                    <li class="subtitulo">Elementos Formularios</li>
+                    <p class="texto">Esta página lista todos os elementos HTML. Eles são agrupados por função para ajuda-lo a achar o que quer fácilmente. Apesar deste guia ser escrito para aqueles mais inexperientes com a programação, nós esperamos que seja útil para todos.</p>
+                    <dl>
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;form&gt;</dt>
+                        <dd class="texto">Este elemento define um formulário. É um elemento de container como um elemento &lt;div&gt; ou &lt;p&gt; , mas ele também suporta alguns atributos específicos para configurar a forma como o formulário se comporta. Todos os seus atributos são opcionais, mas é considerada a melhor prática sempre definir pelo menos o atributo action e o atributo method.
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;label&gt;</dt>
+                        <dd class="texto">Um elemento HTML &lt;label&gt; representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo for. Tal controle é chamado o controle etiquetado do elemento etiqueta. Um input pode ser associado a diversas etiquetas (&lt;label&gt;s).
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;input&gt;</dt>
+                        <dd class="texto">O elemento HTML &lt;input&gt; é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um &lt;input&gt; varia consideravelmente dependendo do valor de seu atributo type.
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;textarea&gt;</dt>
+                        <dd class="texto">O elemento  HTML &lt;textarea&gt; representa um controle de edição para uma caixa de texto, útil quando você quer permitir ao usuário informar um texto  extenso em formato livre, como um comentário ou formulário de retorno. 
+                        <!--elemento-->
+                        <dt class="subtitulo2">&lt;button&gt;</dt>
+                        <dd class="texto">O Elemento HTML &lt;button&gt; representa um botão clicável. 
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;form action="/pagina-processa-dados-do-form" method="post"&gt;<br>
+                            .....&lt;div&gt;<br>
+                            ..........&lt;label for="nome">Nome:&lt;/label&gt;<br>
+                            ..........&lt;input type="text" id="nome" /&gt;<br>
+                            .....&lt;/div&gt;<br>
+                            .....&lt;div&gt;<br>
+                            ..........&lt;label for="email"&gt;E-mail:&lt;/label&gt;<br>
+                            ..........&lt;input type="email" id="email" /&gt;<br>
+                            .....&lt;/div&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;label for="msg"&gt;Mensagem:&lt;/label&gt;<br>
+                            .....&lt;textarea id="msg"&gt;&lt;/textarea&gt;<br>
+                            .....&lt;/div&gt;<br>
+                            &lt;/form&gt;<br>
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <form>
+                                <div>
+                                    <label for="name">Nome:</label>
+                                    <input type="text" id="name" />
+                                </div>
+                                <div>
+                                    <label for="mail">E-mail:</label>
+                                    <input type="email" id="mail" />
+                                </div>
+                                <div>
+                                    <label for="msg">Mensagem:</label>
+                                    <textarea id="msg"></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Enviar sua mensagem</button>
+                                </div>
+                            </form>                      
+                        </div>
+                        </dd>
+                    </dl>
+                    <li class="subtitulo">Elementos multimedia</li>
+                    <dl>
+                        <!--elemento-->
+                        <dt class="subtitulo2">Imagens em HTML</dt>
+                        <dd class="texto">Existem outros tipos de multimídia para considerar, porém é lógico começar com o modesto elemento &lt;img&gt; , usado para inserir uma simples imagem em uma página da web. Nesse artigo vamos aprender a usar esse elemento com mais profundidade, incluindo os básicos, anotando com legendas usando &lt;figure&gt;  e como se relaciona com imagens de fundo em CSS.</dd>
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;img src="https://images-na.ssl-images-amazon.com/images/I/51TIwFvAM9L._AC_SX425_.jpg"&gt;
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51TIwFvAM9L._AC_SX425_.jpg">                     
+                        </div>
+                        <!--elemento-->
+                        <dt class="subtitulo2">Conteúdo em áudio e video</dt>
+                        <dd class="texto">Agora nós iremos aprender como usar os elementos HTML5 &lt;video&gt; e &lt;audio&gt;, para inserir video e audio em nossa página; incluindo o basico, fornecendo acesso a diferentes tipos de arquivo para navegadores diferentes, adicionando legenda , e como adicionar alternativas para navegadores mais antigos.</dd>
+                        <br><b>Exemplo:</b>
+                        <div class="cod_exemplo">
+                            &lt;video src="https://youtu.be/uHKfrz65KSU" controls&gt;<br>
+                            ........&lt;p&gt;Your browser doesn't support HTML5 video. Here is a &lt;a href="https://youtu.be/uHKfrz65KSU"&gt;link to the video &lt;/a&gt;instead.&lt;/p&gt;
+                            &lt;/video&gt;
+                        </div>
+                        <b>Resultado :</b><br>
+                        <div class="resultado">
+                            <video src="https://youtu.be/uHKfrz65KSU" controls>
+                                <p>Your browser doesn't support HTML5 video. Here is a <a href="https://youtu.be/uHKfrz65KSU">link to the video</a> instead.</p>
+                            </video>                    
+                        </div>
+                    </dl>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
